@@ -1,12 +1,18 @@
 package com.apps.sms.bean;
 
 public class School {
-private int id;
+private long id;
 private String name;
 private String description;
 private String tel;
 private String country_id;
 private String address;
+public long getId() {
+	return id;
+}
+public void setId(long id) {
+	this.id = id;
+}
 public String getName() {
 	return name;
 }
@@ -25,23 +31,16 @@ public String getTel() {
 public void setTel(String tel) {
 	this.tel = tel;
 }
-public String getAddress() {
-	return address;
-}
-public void setAddress(String address) {
-	this.address = address;
-}
 public String getCountry_id() {
 	return country_id;
 }
 public void setCountry_id(String country_id) {
 	this.country_id = country_id;
 }
-public void setId(int id) {
-	this.id = id;
+public String getAddress() {
+	return address;
 }
-public int getId()
-{
-	return id;
-	}
+public void setAddress(String address) {
+	this.address = address;
+}
 }
