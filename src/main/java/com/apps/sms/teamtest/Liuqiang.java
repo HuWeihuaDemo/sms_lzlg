@@ -1,6 +1,6 @@
 package com.apps.sms.teamtest;
 
-public class liuqiang {
+public class Liuqiang {
 	//刘强16740108
 
 }
