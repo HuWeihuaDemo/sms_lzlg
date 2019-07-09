@@ -1,6 +1,6 @@
 package com.apps.sms.bean;
 
-public class School {
+public class User {
 	private Long id;
 	private String realname;
 	private String telephone;
