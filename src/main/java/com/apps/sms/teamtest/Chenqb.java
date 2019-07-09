@@ -1,4 +1,4 @@
-package com.apps.sms.web.TeemTest;
+package com.apps.sms.teamtest;
 
 public class Chenqb {
 	
