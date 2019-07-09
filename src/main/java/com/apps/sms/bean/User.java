@@ -1,5 +1,9 @@
 package com.apps.sms.bean;
-
+/**
+ * 
+ * @author 胡伟华
+ *
+ */
 public class User { 
 	private Long id;
 	private String realname;
@@ -7,6 +11,14 @@ public class User {
 	private String password;
 	private String student_no;
 	private String gender;
+	private String clazz_id;
+	
+	public String getClazz_id() {
+		return clazz_id;
+	}
+	public void setClazz_id(String clazz_id) {
+		this.clazz_id = clazz_id;
+	}
 	public Long getId() {
 		return id;
 	}

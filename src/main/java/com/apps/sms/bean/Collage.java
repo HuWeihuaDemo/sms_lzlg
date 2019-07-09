@@ -1,5 +1,9 @@
 package com.apps.sms.bean;
-
+/**
+ * 
+ * @author 张小娜
+ *
+ */
 public class Collage {
 	private Long id;
 	private String name;

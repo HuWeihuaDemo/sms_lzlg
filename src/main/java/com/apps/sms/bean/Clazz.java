@@ -1,9 +1,13 @@
 package com.apps.sms.bean;
-
+/**
+ * 
+ * @author 陈启斌
+ *
+ */
 public class Clazz {
-	private Long  id;
+	private Long id;
 	private String name;
-	private  Long begin_time;
+	private Long begin_time;
 	private Long college_id;
 	public Long getId() {
 		return id;

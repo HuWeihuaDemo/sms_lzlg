@@ -1,5 +1,9 @@
 package com.apps.sms.bean;
-
+/**
+ * 
+ * @author 韩磊
+ *
+ */
 public class StudentCourse {
 	private Long id;
 	private Long user_id;

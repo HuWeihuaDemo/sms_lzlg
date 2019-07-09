@@ -1,5 +1,9 @@
 package com.apps.sms.bean;
-
+/**
+ * 
+ * @author 刘强
+ *
+ */
 public class Course {
 	private Long id;
 	private String name;
