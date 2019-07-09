@@ -1,5 +1,5 @@
 package com.apps.sms.dao;
 
-public class SchoolDao {
+public class UserDao {
 
 }
