@@ -1,4 +1,4 @@
-package com.apps.sms.web.controller;
+package com.apps.sms.teamtest;
 
 public class Tongxb {
 /*tongxuebin*/ 
