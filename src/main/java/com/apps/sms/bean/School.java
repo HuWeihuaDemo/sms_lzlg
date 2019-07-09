@@ -5,6 +5,7 @@ private int id;
 private String name;
 private String description;
 private String tel;
+private String country_id;
 private String address;
 public String getName() {
 	return name;
@@ -39,7 +40,6 @@ public void setCountry_id(String country_id) {
 public void setId(int id) {
 	this.id = id;
 }
-private String country_id;
 public int getId()
 {
 	return id;
