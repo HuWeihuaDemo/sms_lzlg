@@ -1,7 +1,5 @@
 package com.apps.sms.service.impl;
 
-import static org.hamcrest.CoreMatchers.nullValue;
-
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -19,8 +17,6 @@ import com.apps.sms.service.SchoolService;
  */
 @Service
 public class SchoolServiceImpl implements SchoolService{
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
-	
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
 	@Resource
 	private SchoolDao schoolDao;
