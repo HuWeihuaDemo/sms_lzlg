@@ -15,5 +15,5 @@ public interface SchoolDao {
 	//更新
 	void update(School school);
 	
-	
+	 
 }

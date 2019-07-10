@@ -11,7 +11,7 @@ private String description;
 private String tel;
 private String country_id;
 private String address;
-public long getId() {
+public Long getId() {
 	return id;
 }
 public void setId(long id) {
