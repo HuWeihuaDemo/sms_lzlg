@@ -1,6 +1,6 @@
 package com.apps.sms.bean;
 
-public class Collage {
+public class College {
 	private Long id;
 	private String name;
 	private String description;
