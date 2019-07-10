@@ -1,5 +1,5 @@
 package com.apps.sms.dao;
 
-public class User_RoleDao {
+public class UserRoleDao {
 
 }

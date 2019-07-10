@@ -1,6 +1,6 @@
 package com.apps.sms.bean;
 
-public class User_Role {
+public class UserRole {
 	private Long id;
 	private Long UserId;
 	private Long RoleId;
