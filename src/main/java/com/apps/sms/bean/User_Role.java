@@ -9,7 +9,7 @@ public class User_Role {
 	}
 	public void setId(Long id) {
 		this.id = id;
-	}
+	} 
 	public Long getUserId() {
 		return UserId;
 	}
