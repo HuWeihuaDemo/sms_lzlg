@@ -28,13 +28,17 @@ public class CourseServiceImpl implements CourseService {
 	}
 
 	@Override
-	public void saveOrIpdate(Course course) throws Exception {
+	public void saveOrUpdate(Course course) throws Exception {
 		// TODO Auto-generated method stub
 		if(course.getId()==null) {
 			courseDao.insert(course);
 		} else {
 			courseDao.update(course);
-}
+		}
 	}
-
+	@Override
+	public void deleteById(long id)throws Exception{
+	courseDao.deleteById(id);
+	
+}
 }
