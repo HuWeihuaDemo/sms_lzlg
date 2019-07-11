@@ -7,4 +7,18 @@
   	resultType="com.apps.sms.bean.College">
     select * from sms_college
   </select>
+ <insert id="insert">
+  	insert into sms_college values(#{id},#{name},#{description},);
+  </insert>
+
+  <update id="update">
+  	update sms_college
+	set name=#{name},
+	description=#{description},
+	where id = #{id}
+  </update>
+
+  <delete id="deleteById">
+  	delete from sms_college where id = #{id}
+  </delete>
 </mapper>
