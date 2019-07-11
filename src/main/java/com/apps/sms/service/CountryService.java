@@ -7,6 +7,9 @@ import com.apps.sms.bean.Country;
 public interface CountryService {
 
 	List<Country> selectAll();
+	
 	void saveOrUpdate(Country country) throws Exception;
+	
+	void deleteById(long id) throws Exception;
 
 }
