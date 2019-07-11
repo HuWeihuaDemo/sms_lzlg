@@ -5,8 +5,12 @@ import java.util.List;
 import com.apps.sms.bean.Role;
 
 public interface RoleDao {
-     List<Role> selectAll();
-     void insert(Role role);
-     void update(Role role);
-
+	List<Role>selectAll();
+	//插入
+	void insert(Role role);
+	//更新
+	void update(Role role);
+	
+	
+	
 }

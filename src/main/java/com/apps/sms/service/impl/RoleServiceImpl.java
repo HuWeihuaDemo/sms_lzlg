@@ -1,7 +1,5 @@
 package com.apps.sms.service.impl;
 
-//import static org.hamcrest.CoreMatchers.nullValue;
-
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -19,17 +17,19 @@ import com.apps.sms.service.RoleService;
  */
 @Service
 public class RoleServiceImpl implements RoleService{
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
+	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
 	
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
+	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
 	@Resource
 	private RoleDao roleDao;
 
+	@Override
 	public List<Role> selectAll() {
 		// TODO Auto-generated method stub
 		return roleDao.selectAll();
 	}
 
+	@Override
 	public void saveOrUpdate(Role role) throws Exception {
 		if(role.getId()==null) {
 			roleDao.insert(role);
