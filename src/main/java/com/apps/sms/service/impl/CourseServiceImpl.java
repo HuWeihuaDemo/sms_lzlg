@@ -17,7 +17,6 @@ import com.apps.sms.service.CourseService;
 @Service
 public class CourseServiceImpl implements CourseService {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
-	
 	@Resource
 	private CourseDao courseDao;
 	
@@ -28,13 +27,17 @@ public class CourseServiceImpl implements CourseService {
 	}
 
 	@Override
-	public void saveOrIpdate(Course course) throws Exception {
+	public void saveOrUpdate(Course course) throws Exception {
 		// TODO Auto-generated method stub
 		if(course.getId()==null) {
 			courseDao.insert(course);
 		} else {
 			courseDao.update(course);
-}
+		}
 	}
-
+	@Override
+	public void deleteById(long id)throws Exception{
+	courseDao.deleteById(id);
+	
+}
 }

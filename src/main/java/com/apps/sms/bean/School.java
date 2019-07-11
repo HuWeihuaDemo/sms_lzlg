@@ -2,7 +2,6 @@ package com.apps.sms.bean;
 /**
  * 
  * @author 陈雪峰
- *
  */
 public class School {
 private Long id;

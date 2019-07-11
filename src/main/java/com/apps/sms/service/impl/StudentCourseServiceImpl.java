@@ -36,6 +36,10 @@ public class StudentCourseServiceImpl implements StudentCourseService{
 		} else {
 			studentcourseDao.update(studentcourse);
 		}
-		
 	}
+	@Override
+	public void deleteById(long id) throws Exception{
+		studentcourseDao.deleteById(id);
+	}
+
 }
