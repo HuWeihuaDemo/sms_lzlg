@@ -7,5 +7,7 @@ import com.apps.sms.bean.UserRole;
 public interface UserRoleService {
 
 	List<UserRole> selectAll();
-	void saveOrUpdate(UserRole userrole) throws Exception;
+	void saveOrUpdate(UserRole user_role) throws Exception;
+	
+	void deleteById(long id) throws Exception;
 }
