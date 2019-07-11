@@ -1,6 +1,10 @@
 package com.apps.sms.bean;
-
-public class UserRole {
+/**
+ * 
+ * @author 李金珂
+ *
+ */
+ public class UserRole {
 	private Long id;
 	private Long UserId;
 	private Long RoleId;
