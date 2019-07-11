@@ -12,5 +12,7 @@ public interface CourseDao {
 	void insert(Course course);
 	//更新
 	void update(Course course);
+	//通过id删除
+	void deleteById(long id);
 
 }
