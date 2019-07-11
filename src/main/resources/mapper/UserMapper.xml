@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.apps.sms.dao.CountryDao">
+<mapper namespace="com.apps.sms.dao.UserDao">
   <select id="selectAll" 
-  	resultType="com.apps.sms.bean.Country">
-    select * from sms_country
+  	resultType="com.apps.sms.bean.User">
+    select * from sms_user
   </select>
 </mapper>
