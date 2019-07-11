@@ -1,5 +1,4 @@
 package com.apps.sms.dao;
-
 import java.util.List;
 
 import com.apps.sms.bean.College;

@@ -16,7 +16,7 @@
 	set name=#{name},
 	description=#{description},
 	where id = #{id}
-  </update>
+  </update>  
 
   <delete id="deleteById">
   	delete from sms_college where id = #{id}

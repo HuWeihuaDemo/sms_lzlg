@@ -39,4 +39,4 @@ public class CollegeServiceImpl implements CollegeService{
 		public void deleteById(long id) throws Exception {
 			collegeDao.deleteById(id);
 		}
-	}
+	}  

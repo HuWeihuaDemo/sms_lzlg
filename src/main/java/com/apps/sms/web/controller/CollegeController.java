@@ -32,5 +32,5 @@ public class CollegeController{
 		e.printStackTrace();
 		  return e.getLocalizedMessage();
 	}
-}
+}  
 }
