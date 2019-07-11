@@ -4,9 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 import com.apps.sms.bean.Role;
 import com.apps.sms.service.RoleService;
@@ -16,6 +17,17 @@ public class RoleController {
 	
 	@Autowired
 	private RoleService roleService;
+	  @PostMapping("saveOrUpdate")
+      public String saveOrUpdate(Role role) {
+			try {
+			roleService.saveOrUpdate(role);
+				return "保存或更新成功";
+			} catch (Exception e) {
+				// 打印异常信息，返回异常信息
+				e.printStackTrace();
+				return e.getMessage();
+			}
+		}
 
 	// http://localhost:8080/role/selectAll
 	@GetMapping("selectAll")
