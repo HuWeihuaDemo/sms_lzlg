@@ -7,4 +7,21 @@
   	resultType="com.apps.sms.bean.Country">
     select * from sms_country
   </select>
+  
+  <insert id="insert">
+  inster into sms_country values(null,#{name});
+  </insert>
+  
+  <update id="update">
+  update sms_country
+  set name=#{name},
+  where id = #{id}
+  </update>
+  
+  <delete id="deleteById">
+  delete from sms_country where id = #{id}
+  </delete>
+  
+  
+  
 </mapper>
