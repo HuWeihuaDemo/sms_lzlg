@@ -37,5 +37,11 @@ public class ClazzServiceImpl implements ClazzService{
 			clazzDao.update(clazz);
 		}
 		
+	
+	}
+	
+	@Override
+	public void deleteById(long id) throws Exception {
+		clazzDao.deleteById(id);
 	}
 }
