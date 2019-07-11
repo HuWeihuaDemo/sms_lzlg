@@ -1,7 +1,7 @@
 package com.apps.sms.bean;
 /**
  * 
- * @author 刘强 16
+ * @author 刘强 
  *
  */
 public class Course {
