@@ -16,6 +16,7 @@
  	 credit=#{credit},
  	 user_id=#{uuser_id},
  	 where id=#{id};
+ 	 
   </update>
   <delete id="deleteById">
   	delete from sms_course where id=#{id};

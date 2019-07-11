@@ -17,7 +17,6 @@ import com.apps.sms.service.CourseService;
 @Service
 public class CourseServiceImpl implements CourseService {
 	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
-	
 	@Resource
 	private CourseDao courseDao;
 	

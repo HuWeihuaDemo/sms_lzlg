@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.apps.sms.bean.Course;
 import com.apps.sms.service.CourseService;
 
-//接受参数，返回结果
+//接受参数，返回结果1
 @RestController
 @RequestMapping("/course")
 public class CourseController {

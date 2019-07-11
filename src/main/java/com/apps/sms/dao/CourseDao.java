@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.apps.sms.bean.Course;
 
-//数据部分1
+//数据部分12
 public interface CourseDao {
 	//查询所有
 	List<Course>selectAll();
