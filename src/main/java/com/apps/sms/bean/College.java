@@ -8,7 +8,7 @@ public class College {
 	private Long id;
 	private String name;
 	private String description;
-	private Long school_id;
+	private Long school_id; 
 	public Long getId() {
 		return id;
 	}

@@ -15,7 +15,7 @@ public class CollegeController{
 	@Autowired
 	private CollegeService collegeService;
 
-	// http://localhost:8080/college/selectAll
+	//  http://localhost:8080/college/selectAll
 	@GetMapping("selectAll")
 	public List<College> selectAll(){
 		return collegeService.selectAll();

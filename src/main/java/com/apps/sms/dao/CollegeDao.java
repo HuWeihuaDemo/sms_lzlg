@@ -8,7 +8,7 @@ import com.apps.sms.bean.College;
 public interface CollegeDao {
 	//查询所有
 	List<College> selectAll();
-	
+	 
 //select插入	
 	void insert(College  college);
 	
