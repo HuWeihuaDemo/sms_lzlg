@@ -17,9 +17,9 @@ import com.apps.sms.service.RoleService;
  */
 @Service
 public class RoleServiceImpl implements RoleService{
-	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
+	// 依赖注入，实例化StudentCourseDao并且赋值给studentcourseDao这个变量
 	
-	// 依赖注入，实例化RoleDao并且赋值给roleDao这个变量
+	// 依赖注入，实例化StudentCourseDao并且赋值给studentcourseDao这个变量
 	@Resource
 	private RoleDao roleDao;
 
@@ -36,6 +36,10 @@ public class RoleServiceImpl implements RoleService{
 		} else {
 			roleDao.update(role);
 		}
-		
 	}
+	@Override
+	public void deleteById(long id) throws Exception{
+		roleDao.deleteById(id);
+	}
+
 }

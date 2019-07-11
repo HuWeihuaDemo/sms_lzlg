@@ -7,5 +7,9 @@ package com.apps.sms.service;
 			List<Role>selectAll();
 
 			void saveOrUpdate(Role role) throws Exception;
-		}
+		
+        
+        void deleteById(long id) throws Exception;
 
+		
+        }
