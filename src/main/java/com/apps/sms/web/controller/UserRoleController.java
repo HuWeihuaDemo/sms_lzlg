@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.apps.sms.bean.Course;
 import com.apps.sms.bean.UserRole;
 import com.apps.sms.service.UserRoleService;
 
