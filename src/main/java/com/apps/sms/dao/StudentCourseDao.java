@@ -10,7 +10,8 @@ public interface StudentCourseDao {
 	void insert(StudentCourse studentcourse);
 	//更新
 	void update(StudentCourse studentcourse);
-	
+	//通过ID删除
+	void deleteById(long id);
 	
 	
 }

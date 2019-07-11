@@ -7,4 +7,5 @@ package com.apps.sms.service;
 			List<StudentCourse>selectAll();
 
 			void saveOrUpdate(StudentCourse studentcourse) throws Exception;
+			void deleteById(long id) throws Exception;
 		}
