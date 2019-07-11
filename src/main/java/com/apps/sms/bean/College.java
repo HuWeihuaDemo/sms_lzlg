@@ -24,7 +24,7 @@ public class College {
 	public String getDescription() {
 		return description;
 	}
-	public void setDescription(String description) {
+	public void setDescription(String description) {  
 		this.description = description;
 	}
 	public Long getSchool_id() {
