@@ -17,27 +17,27 @@ import com.apps.sms.service.UserRoleService;
  */
 @Service
 public class UserRoleServiceImpl implements UserRoleService{
-	// 依赖注入，实例化UserRoleDao并且赋值给userroleDao这个变量
+	// 依赖注入，实例化UserRoleDao并且赋值给user_roleDao这个变量
 	@Resource
-	private UserRoleDao userroleDao;
+	private UserRoleDao user_roleDao;
 
 	@Override
 	public List<UserRole> selectAll() {
 		// TODO Auto-generated method stub
-		return userroleDao.selectAll();
+		return user_roleDao.selectAll();
 	}
 
 	@Override
-	public void saveOrUpdate(UserRole userrole) throws Exception {
-		if(userrole.getId()==null) {
-			userroleDao.insert(userrole);
+	public void saveOrUpdate(UserRole user_role) throws Exception {
+		if(user_role.getId()==null) {
+			user_roleDao.insert(user_role);
 		} else {
-			userroleDao.update(userrole);
+			user_roleDao.update(user_role);
 			}
 		}
 	@Override
 		public void deleteById(long id) throws Exception {
-			userroleDao.deleteById(id);
+			user_roleDao.deleteById(id);
 		}
 		
 	}

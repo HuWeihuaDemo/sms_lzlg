@@ -12,15 +12,15 @@ import com.apps.sms.bean.UserRole;
 import com.apps.sms.service.UserRoleService;
 
 @RestController
-@RequestMapping("/userrole")
+@RequestMapping("/user_role")
 public class UserRoleController {
 	
 	@Autowired
-	private UserRoleService userRoleService;
+	private UserRoleService user_roleService;
 	@PostMapping("saveOrUpdate")
-	public String saveOrUpdate(UserRole userrole) {
+	public String saveOrUpdate(UserRole user_role) {
 		try {
-			userRoleService.saveOrUpdate(userrole);
+			user_roleService.saveOrUpdate(user_role);
 			return "保存或成功更新";
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -29,16 +29,16 @@ public class UserRoleController {
 			}
 		}
 	
-	// http://localhost:8080/userrole/selectAll
+	// http://localhost:8080/user_role/selectAll
 	@GetMapping("selectAll")
 	public List<UserRole> selectAll(){
-		return userRoleService.selectAll();
+		return user_roleService.selectAll();
 	}
-	// http://localhost:8080/school/deleteById?id=3
+	// http://localhost:8080/user_role/deleteById?id=3
 		@GetMapping("deleteById")
 		public String deleteById(long id) {
 			try {
-				userRoleService.deleteById(id);
+				user_roleService.deleteById(id);
 				return "删除成功";
 			} catch (Exception e) {
 				// 打印异常信息，返回异常信息

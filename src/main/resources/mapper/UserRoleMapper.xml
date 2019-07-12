@@ -9,7 +9,7 @@
   </select>
   
   <insert id="insert">
-  	insert into sms_userrole values (null,#{user_id},#{role_id})
+  	insert into sms_use_rrole values (null,#{user_id},#{role_id})
   </insert>
   <update id="update">
   update sms_user_role
@@ -18,6 +18,6 @@
  	  where id=#{id}
   </update>
   <delete id="deleteById">
-  	delete from sms_userrole where id = #{id}
+  	delete from sms_user_role where id = #{id}
   </delete>
 </mapper>

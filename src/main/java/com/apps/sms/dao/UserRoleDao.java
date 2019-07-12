@@ -9,10 +9,10 @@ public interface UserRoleDao {
 	List<UserRole> selectAll();
 	
 	// 插入
-	void insert(UserRole userrole);
+	void insert(UserRole user_role);
 		
 	// 更新
-	void update(UserRole userrole);
+	void update(UserRole user_role);
 	
 	// 删除
 	void deleteById(long id);
