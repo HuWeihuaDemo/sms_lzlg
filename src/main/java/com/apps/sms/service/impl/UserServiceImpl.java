@@ -17,7 +17,7 @@ import com.apps.sms.service.UserService;
  */
 @Service
 public class UserServiceImpl implements UserService{
-	// 依赖注入，实例化SchoolDao并且赋值给schoolDao这个变量
+	// 依赖注入，实例化UserDao并且赋值给userDao这个变量
 	@Resource
 	private UserDao userDao;
 
@@ -35,5 +35,9 @@ public class UserServiceImpl implements UserService{
 			userDao.update(user);
 		}
 		
+	}
+	@Override
+	public void deleteById(long id) throws Exception {
+		userDao.deleteById(id);
 	}
 }
