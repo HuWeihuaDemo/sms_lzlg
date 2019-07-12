@@ -9,12 +9,12 @@
   </select>
   
   <insert id="insert">
-  inster into sms_country values(null,#{name});
+  insert into sms_country values(null,#{name});
   </insert>
   
   <update id="update">
   update sms_country
-  set name=#{name},
+  set name=#{name}
   where id = #{id}
   </update>
   
